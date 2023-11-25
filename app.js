@@ -20,7 +20,7 @@ const variable2 = document.getElementById('variable2');
 
 housecleaningcostRadio.addEventListener('click', function() {
   variable1.textContent = 'Price per hour';
-  variable2.textContent = '# of hours';
+  variable2.textContent = 'number of hours';
   priceperhour = v1;
   ofhours = v2;
   result.textContent = '';
@@ -28,7 +28,7 @@ housecleaningcostRadio.addEventListener('click', function() {
 
 priceperhourRadio.addEventListener('click', function() {
   variable1.textContent = 'House cleaning cost';
-  variable2.textContent = '# of hours';
+  variable2.textContent = 'number of hours';
   housecleaningcost = v1;
   ofhours = v2;
   result.textContent = '';
@@ -51,7 +51,7 @@ btn.addEventListener('click', function() {
     result.textContent = `Price per hour = ${computepriceperhour().toFixed(2)}`;
 
   else if(ofhoursRadio.checked)
-    result.textContent = `# of hours = ${computeofhours().toFixed(2)}`;
+    result.textContent = `number of hours = ${computeofhours().toFixed(2)}`;
 })
 
 // calculation
